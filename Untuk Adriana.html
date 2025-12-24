@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Untuk Adriana ❤️</title>
+<style>
+    body {
+        margin: 0;
+        font-family: 'Segoe UI', sans-serif;
+        background: linear-gradient(135deg, #1a237e, #4a148c);
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        text-align: center;
+        overflow: hidden;
+    }
+    .card {
+        background: rgba(0,0,0,0.45);
+        padding: 30px;
+        border-radius: 18px;
+        max-width: 360px;
+        box-shadow: 0 0 25px rgba(0,0,0,0.6);
+        animation: fadeIn 2s ease;
+    }
+    h1 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+    p {
+        font-size: 15px;
+        line-height: 1.7;
+        margin: 12px 0;
+    }
+    .name {
+        font-size: 18px;
+        font-weight: bold;
+        color: #ff80ab;
+    }
+    .heart {
+        font-size: 42px;
+        animation: pulse 1.6s infinite;
+    }
+    @keyframes pulse {
+        0% { transform: scale(1); }
+        50% { transform: scale(1.25); }
+        100% { transform: scale(1); }
+    }
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(25px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+    button {
+        margin-top: 18px;
+        padding: 10px 18px;
+        border: none;
+        border-radius: 25px;
+        background: #ff4081;
+        color: #fff;
+        cursor: pointer;
+        font-size: 14px;
+    }
+    .snow {
+        position: fixed;
+        top: -10px;
+        color: white;
+        animation: fall linear infinite;
+        opacity: 0.8;
+    }
+    @keyframes fall {
+        to { transform: translateY(110vh); }
+    }
+</style>
+</head>
+<body>
+
+<!-- Musik selow -->
+<audio autoplay loop>
+    <source src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_5b9b5b0c27.mp3?filename=soft-piano-ambient-11099.mp3" type="audio/mpeg">
+</audio>
+
+<div class="card">
+    <div class="heart">❤️</div>
+    <h1>Selamat Natal 🎄</h1>
+
+    <p class="name">Adriana…</p>
+
+    <p>
+        Ada rasa yang tidak pernah benar-benar pergi.  
+        Ia hanya diam,  
+        menunggu waktu yang tepat  
+        untuk kembali terasa.
+    </p>
+
+    <p>
+        Kadang, tanpa alasan yang jelas,  
+        ingatan itu datang begitu saja.  
+        Tentang tawa kecil,  
+        dan panggilan sederhana —  
+        <b>Nyok</b>.
+    </p>
+
+    <p>
+        Natal selalu datang dengan tenang,  
+        seperti caramu dulu hadir, Nyok —  
+        tidak ramai,  
+        tapi selalu dirindukan.
+    </p>
+
+    <p>
+        Mungkin sekarang kita menjalani hari  
+        dengan cerita masing-masing.  
+        Tapi ada hal kecil yang jujur  
+        dan tidak pernah berubah.
+    </p>
+
+    <p>
+        Setiap kali nama itu terlintas,  
+        aku masih tersenyum kecil…  
+        tanpa sadar.
+    </p>
+
+    <!-- ENDING PALING KENA -->
+    <p style="margin-top:18px;">
+        Kalau kamu membaca ini sampai sini, Nyok…  
+        aku cuma mau bilang:
+    </p>
+
+    <p>
+        Terima kasih pernah hadir  
+        dengan cara yang sederhana,  
+        tapi meninggalkan kesan  
+        yang lama.
+    </p>
+
+    <p>
+        Dan kalau suatu hari  
+        kamu tersenyum tanpa alasan setelah ini…  
+        mungkin kita sama.
+    </p>
+
+    <button onclick="alert('Tenang… ini cuma pengingat kecil 🤍')">
+        Diam sebentar…
+    </button>
+</div>
+
+<script>
+for(let i=0; i<22; i++){
+    let snow = document.createElement("div");
+    snow.className = "snow";
+    snow.innerHTML = "❄";
+    snow.style.left = Math.random() * 100 + "vw";
+    snow.style.animationDuration = (4 + Math.random() * 6) + "s";
+    snow.style.fontSize = (10 + Math.random() * 16) + "px";
+    document.body.appendChild(snow);
+}
+</script>
+
+</body>
+</html>
